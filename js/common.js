@@ -9,6 +9,9 @@ window.onload = function() {
     speed: 600,
     spaceBetween: 0,
     slideToClickedSlide: true,
+    lazy: {
+        loadPrevNext: true,
+      },
     breakpoints: {
         960: {
             slidesPerView: 3,
@@ -25,7 +28,7 @@ window.onload = function() {
     },
   });
 
- 
+  portfolio_slider.lazy.load()
 
   
   let phoneMask_arr = document.getElementsByClassName('phone');
@@ -187,11 +190,11 @@ window.onload = function() {
     spaceBetween: 0,
     centeredSlides: true,
     centeredSlidesBounds: true,
-    disableOnInteraction: false,
     speed: 600,
     slideToClickedSlide: true,
     autoplay: {
        delay: 2000,
+       disableOnInteraction: false,
      },
     breakpoints: {
         640: {
@@ -200,7 +203,7 @@ window.onload = function() {
         },
     },
   });
-
+  lazyLoadInstance.update();
   
   refreshFsLightbox();
   portfolio_slider.on('slideChange', function () {
