@@ -25,6 +25,9 @@ window.onload = function() {
     },
   });
 
+  var lazyLoadInstance = new LazyLoad({
+    // Your custom settings go here
+  });
 
   
   let phoneMask_arr = document.getElementsByClassName('phone');
