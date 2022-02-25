@@ -13,7 +13,7 @@ window.onload = function() {
         loadPrevNext: true,
       },
     breakpoints: {
-        960: {
+        970: {
             slidesPerView: 3,
             spaceBetween: 60,
         },
@@ -28,7 +28,7 @@ window.onload = function() {
     },
   });
 
-  portfolio_slider.lazy.load()
+ 
 
   
   let phoneMask_arr = document.getElementsByClassName('phone');
